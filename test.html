@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Infinite Slick Sliders</title>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
+</head>
+
+<body>
+
+    <style>
+        .moving-slider-animation {
+            pointer-events: none;
+            background-color: #1055D7;
+        }
+
+        .carousel {
+            width: 100%;
+            /* max-width: 1200px; */
+            margin: auto;
+        }
+
+        .carousel-slide {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-image-wrapper {
+            width: 90%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Fix for RTL Slider */
+        #slider2 .slick-list {
+            direction: rtl;
+        }
+    </style>
+    
+    <div class="moving-slider-animation">
+
+        <!-- First Slider -->
+        <div class="carousel" id="slider1">
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/thornmoney_desktop.svg"
+                        alt="Slide 1" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/affordablecarloans_desktop.svg"
+                        alt="Slide 2" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/ammf_desktop.svg"
+                        alt="Slide 3" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/azora_desktop.svg"
+                        alt="Slide 4" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/bfs_desktop.svg"
+                        alt="Slide 5" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/bizcap_desktop.svg"
+                        alt="Slide 6" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/capitalfinance_desktop.svg"
+                        alt="Slide 7" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/thornmoney_desktop.svg"
+                        alt="Slide 1" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/affordablecarloans_desktop.svg"
+                        alt="Slide 2" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/ammf_desktop.svg"
+                        alt="Slide 3" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/azora_desktop.svg"
+                        alt="Slide 4" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/bfs_desktop.svg"
+                        alt="Slide 5" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/bizcap_desktop.svg"
+                        alt="Slide 6" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/capitalfinance_desktop.svg"
+                        alt="Slide 7" class="carousel-image">
+                </figure>
+            </div>
+        </div>
+
+        <!-- Second Slider -->
+        <div class="carousel" id="slider2">
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/coinstash_desktop.svg"
+                        alt="Slide 1" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/Commonwealth_desktop.svg"
+                        alt="Slide 2" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/earlypay_desktop.svg"
+                        alt="Slide 3" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/geddamoney_desktop.svg"
+                        alt="Slide 4" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/grow_desktop.svg"
+                        alt="Slide 5" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/lumi_desktop.svg"
+                        alt="Slide 6" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/moneyme_desktop.svg"
+                        alt="Slide 7" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/coinstash_desktop.svg"
+                        alt="Slide 1" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/Commonwealth_desktop.svg"
+                        alt="Slide 2" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/earlypay_desktop.svg"
+                        alt="Slide 3" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/geddamoney_desktop.svg"
+                        alt="Slide 4" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/grow_desktop.svg"
+                        alt="Slide 5" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/lumi_desktop.svg"
+                        alt="Slide 6" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/moneyme_desktop.svg"
+                        alt="Slide 7" class="carousel-image">
+                </figure>
+            </div>
+        </div>
+
+        <!-- third slider -->
+        <div class="carousel" id="slider3">
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/selfco_desktop.svg"
+                        alt="Slide 1" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/scotpacbusinessfinance_desktop.svg"
+                        alt="Slide 2" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/Racv_desktop.svg"
+                        alt="Slide 3" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/prospa_desktop.svg"
+                        alt="Slide 4" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/nab_desktop.svg"
+                        alt="Slide 5" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/multipli_desktop.svg"
+                        alt="Slide 6" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/moula_desktop.svg"
+                        alt="Slide 7" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/selfco_desktop.svg"
+                        alt="Slide 8" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/scotpacbusinessfinance_desktop.svg"
+                        alt="Slide 9" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/Racv_desktop.svg"
+                        alt="Slide 10" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/prospa_desktop.svg"
+                        alt="Slide 11" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/nab_desktop.svg"
+                        alt="Slide 12" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/multipli_desktop.svg"
+                        alt="Slide 13" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/moula_desktop.svg"
+                        alt="Slide 14" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/selfco_desktop.svg"
+                        alt="Slide 15" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/scotpacbusinessfinance_desktop.svg"
+                        alt="Slide 16" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/Racv_desktop.svg"
+                        alt="Slide 17" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/prospa_desktop.svg"
+                        alt="Slide 18" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/nab_desktop.svg"
+                        alt="Slide 19" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/multipli_desktop.svg"
+                        alt="Slide 20" class="carousel-image">
+                </figure>
+            </div>
+            <div class="carousel-slide">
+                <figure class="carousel-image-wrapper">
+                    <img src="https://bonofinancestg.wpenginepowered.com/wp-content/uploads/2024/11/moula_desktop.svg"
+                        alt="Slide 21" class="carousel-image">
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#slider1').slick({
+                infinite: true,
+                slidesToShow: 10,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 3000,
+                cssEase: 'linear',
+                arrows: false,
+                pauseOnHover: false,
+                responsive: [
+                    {
+                        breakpoint: 1290,
+                        settings: {
+                            slidesToShow: 8,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 6,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 560,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    }
+                ]
+            });
+
+            $('#slider2').slick({
+                infinite: true,
+                slidesToShow: 10,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 3000,
+                cssEase: 'linear',
+                arrows: false,
+                pauseOnHover: false,
+                rtl: true,
+                responsive: [
+                    {
+                        breakpoint: 1290,
+                        settings: {
+                            slidesToShow: 8,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 6,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 560,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    }
+                ]
+            });
+
+            $('#slider3').slick({
+                infinite: true,
+                slidesToShow: 10,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 3000,
+                cssEase: 'linear',
+                arrows: false,
+                pauseOnHover: false,
+                responsive: [
+                    {
+                        breakpoint: 1290,
+                        settings: {
+                            slidesToShow: 8,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 6,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 560,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            speed: 5000
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
